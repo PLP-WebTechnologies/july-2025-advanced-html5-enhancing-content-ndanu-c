@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Enhanced Form Assignment</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Enhanced Form Assignment</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Favorite Web Technologies</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Sample Data Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Language</th>
+                        <th>Difficulty</th>
+                        <th>Usage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Easy</td>
+                        <td>Structure</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Medium</td>
+                        <td>Styling</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Hard</td>
+                        <td>Interactivity</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Media Samples</h2>
+            <p>Sample Image:</p>
+            <img src="https://via.placeholder.com/200" alt="Sample image">
+
+            <p>Sample Audio:</p>
+            <audio controls>
+                <source src="sample-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section>
+            <h2>User Registration Form</h2>
+
+            <form action="#" method="post" autocomplete="on">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+
+                    <label for="student-id">Student ID (readonly):</label>
+                    <input type="text" id="student-id" value="STU123456" readonly>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <p>Gender:</p>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+
+                    <p>Skills:</p>
+                    <input type="checkbox" id="html" name="skills" value="HTML">
+                    <label for="html">HTML</label>
+
+                    <input type="checkbox" id="css" name="skills" value="CSS">
+                    <label for="css">CSS</label>
+
+                    <input type="checkbox" id="js" name="skills" value="JavaScript">
+                    <label for="js">JavaScript</label>
+
+                    <label for="experience">Experience (0–10):</label>
+                    <input type="range" id="experience" name="experience" min="0" max="10">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Security</legend>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-zA-Z]).{6,}"
+                        title="At least 6 characters, with letters and numbers" required>
+
+                    <label for="confirm">Confirm Password:</label>
+                    <input type="password" id="confirm" name="confirm" required>
+                </fieldset>
+
+                <button type="submit">Register</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My HTML Assignment</p>
+    </footer>
+
+</body>
+
+</html>
